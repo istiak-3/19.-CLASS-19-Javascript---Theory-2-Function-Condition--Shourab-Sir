@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1252px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-- ============= Common CSS ==================== --*/
+
+
+/*-- ============= gradeConverter SECTION START ==================== --*/
+
+#gradeConvert {
+    background: #f1f1f1;
+    padding: 50px 0;
+}
+
+#gradeConvert .container {
+    padding: 30px 80px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #2a7b9b, #57c786c7);
+}
+
+
+
+
+#gradeConvert .container .heading h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f0f0f0;
+    padding: 10px;
+    background: #29b1a5;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#gradeConvert .container .heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+#gradeConvert .container .title h3 {
+    color: #1a504b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+#gradeConvert .container .marksForm .studentsInput {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: rgb(255, 255, 255);
+    border: 1px inset #cecece8f;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+#gradeConvert .container .marksForm .studentsInput:focus {
+    outline: none;
+    box-shadow: inset 2px 5px 12px 0.01px #2424241a, 2px 6px 10px 0.5px #3a746c69;
+
+}
+
+#gradeConvert .container .marksForm .studentsInput::placeholder {
+    font-size: 13px;
+    font-weight: medium;
+    font-family: cursive;
+
+}
+
+#gradeConvert .container .marksForm .studentsInput.nameRequired::placeholder {
+    color: red;
+
+}
+
+#gradeConvert .container .marksForm {
+    width: 300px;
+}
+
+
+#gradeConvert .container .marksForm .marksInput {
+    width: 100%;
+    height: 50px;
+
+    background: rgb(255, 255, 255);
+    border: 1px inset #cecece8f;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+#gradeConvert .container .marksForm .marksInput:focus {
+    outline: none;
+    box-shadow: inset 2px 5px 12px 0.01px #2424241a, 2px 6px 10px 0.5px #3a746c69;
+
+}
+
+#gradeConvert .container .marksForm .marksInput::placeholder {
+    font-size: 13px;
+    font-weight: medium;
+    font-family: cursive;
+
+}
+
+#gradeConvert .container .marksForm .marksInput.marksRequired::placeholder {
+    color: red;
+
+}
+
+#gradeConvert .container .marksForm .marksButton {
+
+    --base-w: 150px;
+    --width: 80px;
+    --scale: calc(var(--width) / var(--base-w));
+
+    width: var(--width);
+    aspect-ratio: 20 / 11;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(28px * var(--scale));
+    font-weight: bold;
+    color: #4e4e4e;
+    background: #f3f3f3;
+    padding: calc(5px * var(--scale));
+    border: none;
+    border-radius: calc(25px * var(--scale));
+
+    box-shadow: inset calc(2px * var(--scale)) calc(5px * var(--scale)) calc(2px * var(--scale)) calc(0.01px * var(--scale)) #24242415,
+        inset calc(-4px * var(--scale)) calc(-2px * var(--scale)) 0 calc(3px * var(--scale)) #fff,
+        calc(1px * var(--scale)) calc(2px * var(--scale)) 0 calc(1.5px * var(--scale)) #7272729a;
+
+    transform: translate(calc(-1px * var(--scale)), calc(-2px * var(--scale)));
+}
+
+#gradeConvert .container .marksForm .marksButton:focus {
+    outline: none;
+
+    box-shadow: inset calc(4px * var(--scale)) calc(4px * var(--scale)) calc(6px * var(--scale)) calc(1px * var(--scale)) #24242485,
+        inset calc(-6px * var(--scale)) calc(-6px * var(--scale)) calc(2px * var(--scale)) calc(2px * var(--scale)) #ffffffc0,
+        calc(-1.5px * var(--scale)) calc(-1.5px * var(--scale)) 0 0 #727474c7,
+        calc(1px * var(--scale)) calc(1px * var(--scale)) 0 0 #606161c7;
+
+
+    transform: translate(0, 0);
+    transition: all 0.1s ease-out;
+}
+
+/* #gradeConvert .container .marksForm .marksButton.focusEnd {
+
+    box-shadow: 1px 2px 0px 1.5px #3a746c9a;
+    transform: translate(-1px, -2px);
+    transition: all 0.05s ease-in;
+} */
+
+#gradeConvert .container .marksForm .showHideParent {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#gradeConvert .container .marksForm .showHide {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    height: 34px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background: #e9e9e9;
+}
+
+#gradeConvert .container .marksForm .showHide.active .marksInput {
+    outline: none;
+    box-shadow: inset 2px 5px 12px 0.01px #2424241a, 2px 6px 10px 0.5px #3a746c69;
+}
+
+#gradeConvert .container .marksForm .showHide .closedEye {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+    color: #1A504B;
+    opacity: 1;
+    transition: opacity 0.3s ease-out 0.1s;
+}
+
+#gradeConvert .container .marksForm .showHide .closedEye.closedEyeReverse {
+    opacity: 0;
+    transition: opacity 0.1s ease-out 0s;
+}
+
+#gradeConvert .container .marksForm .showHide .openedEye.openedEyeReverse {
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.025s;
+}
+
+#gradeConvert .container .marksForm .showHide .openedEye {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+    color: #1A504B;
+    opacity: 0;
+    transition: opacity 0.15s ease-in 0s;
+}
+
+
+#gradeConvert .container .resultParent {
+    margin: 45px 0;
+}
+
+#gradeConvert .container .resultParent .result {
+    color: #1a504b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#gradeConvert .container .resultParent .studentName {
+    color: #1a504b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/*-- ============= gradeConverter SECTION END ==================== --*/
+
+
+
+/*-- ============= bulb SECTION START ==================== --*/
+
+#bulb {
+    text-align: center;
+    background: #f1f1f1;
+}
+
+#bulb .btn_on {
+    padding: 25px;
+    margin: 0 80px 60px 0;
+    border: 2px solid #4443432a;
+    border-radius: 50px;
+    background: linear-gradient(#a39e9e, #d8ceceb6);
+    color: #3f3f3f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#bulb .btn_off {
+    padding: 25px;
+    margin: 0 0 60px 60px;
+    border: 2px solid #4443432a;
+    border-radius: 50px;
+    background: linear-gradient(#a39e9e, #d8ceceb6);
+    color: #3f3f3f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#bulb img {
+    margin-top: 50px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/*-- ============= bulb SECTION END ==================== --*/
