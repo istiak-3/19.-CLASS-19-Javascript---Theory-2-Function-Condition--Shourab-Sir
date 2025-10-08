@@ -151,7 +151,7 @@ a {
     transform: translate(calc(-1px * var(--scale)), calc(-2px * var(--scale)));
 }
 
-#gradeConvert .container .marksForm .marksButton:focus {
+#gradeConvert .container .marksForm .marksButton.focus {
     outline: none;
 
     box-shadow: inset calc(4px * var(--scale)) calc(4px * var(--scale)) calc(6px * var(--scale)) calc(1px * var(--scale)) #24242485,
@@ -280,5 +280,6 @@ a {
     height: 400px;
     border-radius: 10px;
 }
+
 
 /*-- ============= bulb SECTION END ==================== --*/
