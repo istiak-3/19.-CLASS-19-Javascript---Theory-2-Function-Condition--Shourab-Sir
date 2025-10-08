@@ -209,7 +209,8 @@ a {
         inset calc(-4px * var(--scale)) calc(-2px * var(--scale)) 0 calc(3px * var(--scale)) #fff,
         calc(1px * var(--scale)) calc(2px * var(--scale)) 0 calc(1.5px * var(--scale)) #7272729a;
 
-    transform: translate(calc(-1px * var(--scale)), calc(-2px * var(--scale)));
+        transform: translate(calc(-1px * var(--scale)), calc(-2px * var(--scale)));
+        transition: all 0.1s ease-out;
 }
 
 #gradeConvert .marksForm .marksButton.focus {
@@ -222,7 +223,7 @@ a {
 
 
     transform: translate(0, 0);
-    transition: all 0.1s ease-out;
+    transition: all 0.1s ease-in;
 }
 
 #gradeConvert .resultParent {
@@ -282,3 +283,4 @@ a {
 }
 
 /*-- ============= bulb SECTION END ==================== --*/
+
