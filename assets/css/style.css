@@ -211,6 +211,8 @@ a {
 
         transform: translate(calc(-1px * var(--scale)), calc(-2px * var(--scale)));
         transition: all 0.1s ease-out;
+    
+    cursor: pointer;
 }
 
 #gradeConvert .marksForm .marksButton.focus {
@@ -283,4 +285,5 @@ a {
 }
 
 /*-- ============= bulb SECTION END ==================== --*/
+
 
