@@ -26,9 +26,6 @@
 
 
 
-
-
-
 /*============ gradeConverter SECTION START ================*/
 
 //Grade System Using Conditional Statement
@@ -76,7 +73,7 @@ document.addEventListener('click', () => {
         marksInput.style.boxShadow = marksInputShadow;
     }
     else {
-
+        
         marksInput.style.boxShadow = "";
     }
 })
@@ -202,10 +199,6 @@ marksButton.addEventListener('mouseleave', function(){
     marksButton.classList.remove("focus");
 })
 
-
-
-//normal function calling
-//marksButton.addEventListener('click', );
 
 /*============ gradeConverter SECTION END ================*/
 
